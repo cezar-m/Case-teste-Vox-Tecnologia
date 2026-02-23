@@ -28,36 +28,36 @@ Um sistema web completo para gerenciamento de usuários, produtos, desenvolvido 
 
 app/
 ├── Http/
-│   ├── Controllers/
-│   │   ├── AuthController.php
-│   │   ├── DashboardController.php
-│   │   ├── ProdutoController.php
-│   │   ├── UserController.php
-│   │   └── Controller.php               <- Controller base
-│   │
-│   ├── Middleware/
-│   │   ├── AdminMiddleware.php
-│   │   └── Authenticate.php
-│   │
-│   └── Kernel.php                       <- Registrando middlewares
+│ ├── Controllers/
+│ │ ├── AuthController.php
+│ │ ├── DashboardController.php
+│ │ ├── ProdutoController.php
+│ │ ├── UserController.php
+│ │ └── Controller.php <- Controller base
+│ │
+│ ├── Middleware/
+│ │ ├── AdminMiddleware.php
+│ │ └── Authenticate.php
+│ │
+│ └── Kernel.php <- Registrando middlewares
 │
 resources/
 ├── views/
-│   ├── layouts/
-│   │   └── app.blade.php                <- Layout principal (header/footer)
-│   │
-│   ├── dashboard/
-│   │   └── index.blade.php              <- Dashboard Admin
-│   │
-│   ├── produtos/
-│   │   ├── index.blade.php              <- Listagem produtos
-│   │   ├── create.blade.php             <- Form criar produto
-│   │   └── edit.blade.php               <- Form editar produto
-│   │
-│   └── auth/
-│       ├── login.blade.php
-│       ├── register.blade.php
-│       └── components/                  <- Componentes Blade (inputs, buttons)
+│ ├── layouts/
+│ │ └── app.blade.php <- Layout principal (header/footer)
+│ │
+│ ├── dashboard/
+│ │ └── index.blade.php <- Dashboard Admin
+│ │
+│ ├── produtos/
+│ │ ├── index.blade.php <- Listagem produtos
+│ │ ├── create.blade.php <- Form criar produto
+│ │ └── edit.blade.php <- Form editar produto
+│ │
+│ └── auth/
+│ ├── login.blade.php
+│ ├── register.blade.php
+│ └── components/ <- Componentes Blade (inputs, buttons)
 │
 routes/
-└── web.php                               <- Rotas web
+└── web.php <- Rotas web
